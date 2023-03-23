@@ -1,0 +1,24 @@
+@mixin f-icons {
+    @font-face {
+        font-family: "Font Awesome 5 Free";
+        font-display: block;
+        font-weight: 900;
+        src: url("../assets/fonts/font-awesome/fa-solid-900.woff2") format("woff2"), url("../assets/fonts/font-awesome/fa-solid-900.ttf") format("truetype");
+    }
+}
+@mixin font-i($i,$f-size,$color){
+    content: $i;
+    font: 900 $f-size $font-2;
+    color: $color;
+}
+
+@mixin mp0 {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin mobi {
+    @media screen and (max-width:576px) {
+        @content
+    }
+}

@@ -1,0 +1,20 @@
+*{
+    @include mp0;
+    list-style: none;
+}
+@include f-icons;
+body{
+    font-family: $font-1;
+}
+h2{
+    font-weight: 600;
+}
+h3{
+    font-weight: 600;
+}
+ul{
+    @include mp0;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,21 @@
+@import './base/variables';
+@import './base/mapas';
+@import './base/extend';
+@import './base/mixin';
+//componentes
+@import './componentes/selectores-generales';
+/*header-a*/
+@import './componentes/header';
+/*header-b*/
+/*main-a*/ 
+@import './componentes/main';
+@import './componentes/main-h-Akatsuki';
+@import './componentes/main-h-Espadas';
+@import './componentes/main-h-Dojutsus';
+/*main-b*/
+/*main-contacto-a*/
+@import './componentes/main-contacto';
+/*main-contacto-b*/
+/*footer-a*/
+@import './componentes/footer';
+/*footer-b*/
