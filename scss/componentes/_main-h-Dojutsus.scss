@@ -19,6 +19,19 @@
         div{
             grid-column: 1/2;
             grid-row: 2/3;
+            >div{
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+            &.container__img__byak{
+
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
         }
         div:nth-child(3){
             grid-column: 2/3;
@@ -27,6 +40,34 @@
             font-size: 1.1rem;
             letter-spacing: 0.02rem;
             word-spacing: 0.2rem;  
+        }
+    }
+}
+@include mobi{
+    body{
+        main{
+            .section__dojutsus{
+                article{
+                    @include flex($fd-c,$jc-fs,$ai-c);
+                    div{
+                        @include flex($fd-r,$jc-c,$ai-fs);
+                        width: 100%;
+                        &.container__img__byak{
+                            width: 50%;
+                            img{
+                                width: 100%;
+                                border-radius: 8px;
+                            }
+                        }
+                        .container__img{
+                            width: 50%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

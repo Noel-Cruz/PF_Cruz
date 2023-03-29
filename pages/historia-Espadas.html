@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sumérgete en el emocionante mundo ninja de Naruto y Naruto Shippuden. Descubre las habilidades y la historia
+    de tus personajes favoritos a través de nuestros artículos informativos y entretenidos. ¡Explora nuestro sitio web y conviértete en un experto en el universo de Naruto hoy mismo!">
+    <meta name="keywords" content="Naruto,Anime,Habilidades,Historia,Personajes,Jutsu,Ninjutsu,Genjutsu,Taijutsu,Sharingan,Byakugan,Rinnegan,Hokage,
+    Akatsuki,Ninja,Uchiha,Senju,Clan,Aldea,Chakra,Shippuden">
     <title>Mundo NINJA | Espadas</title>
     <link rel="shortcut icon" href="../assets/imagenes/Simbolo_konoha_favicon1.png" type="image/x-icon">
     <!--boostrap-->
@@ -52,14 +56,16 @@
             </button>
             <div class="offcanvas offcanvas-top menu__busqueda__mobile" tabindex="-1" id="offcanvasTop"
                 aria-labelledby="offcanvasTopLabel">
-                <div class="offcanvas-header">
+                <div class="div__boton-close">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="barra__busqueda__mobile">
-                    <div class="espacio__busqueda__mobile">
-                        Escribir...
-                    </div>
-                </div>
+                <form class="barra__busqueda__mobile">
+                    <input class="espacio__busqueda__mobile" type="text" name="Escribir" placeholder="Escribir...">
+                    <button type="submit">
+                        <div>
+                        </div>
+                    </button>
+                </form>
             </div>
             <div class="navbar navbar-dark navbar__mobile">
                 <button class="botonmenu_mobile" type="button" data-bs-toggle="offcanvas"
@@ -76,18 +82,21 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                            <li class="menu__az--desplegable">
+                                <div>
                                     A-Z
-                                </a>
-                        </ul>
-                        </li>
+                                </div>
+                                <ul>
+                                    <li><a href="./historia-Akatsuki.html">Akatsuki</a></li>
+                                    <li><a href="./historia-Dojutsus.html">Dojutsus</a></li>
+                                    <li><a href="./historia-Espadas.html">Espadas</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -101,7 +110,10 @@
             </h2>
             <article>
                 <h3>Kubikiribocho</h3>
-                <div><img src="../assets/imagenes/Kubikiribocho.jpg" alt=""></div>
+                <div class="div__kubiri">
+                    <img class="kubiri" src="../assets/imagenes/Kubikiribocho.jpg" alt="">
+                    <img class="kubiri-h" src="../assets/imagenes/Kubikiribocho-horizontal.jpg" alt="">
+                </div>
                 <div>
                     <p>La espada kubikiribocho, o también llamado cuchilla decapitador, es una espada gigantesca de gran
                         peso y tamaño que tiene una característica muy peculiar, su mango es desmontable; sin embargo,

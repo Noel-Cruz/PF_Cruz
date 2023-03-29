@@ -21,6 +21,10 @@
             grid-row: 2/3;
             img{
                 width: 100%;
+                border-radius: 8px;
+            }
+            .kubiri-h{
+                display: none;
             }
         }
         div:nth-child(3){
@@ -37,6 +41,38 @@
                 padding-left: 3rem;
                 li{
                     list-style:disc;
+                }
+            }
+        }
+    }
+}
+@include mobi{
+    body{
+        background-image: none;
+        background-attachment: scroll;
+        main{
+            margin: 0;
+            .section__espadas{
+                article{
+                    @include flex($fd-c,$jc-fs,$ai-c);
+                    div{
+                        
+                        &:nth-child(2){
+                            width: 60%;
+                            img{
+                                width: 100%;
+                            }
+                            .kubiri{
+                                display: none;
+                            }
+                        }
+                        &.div__kubiri{
+                            width: 96%;
+                            .kubiri-h{
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
         }

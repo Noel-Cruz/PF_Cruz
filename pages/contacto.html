@@ -42,41 +42,52 @@
                     </form>
                 </li>
             </ul>
-            <button class="btn button__busqueda__mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <button class="btn button__busqueda__mobile" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                 <span class="icono__busqueda__mobile"></span>
             </button>
-            <div class="offcanvas offcanvas-top menu__busqueda__mobile" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                <div class="offcanvas-header">
+            <div class="offcanvas offcanvas-top menu__busqueda__mobile" tabindex="-1" id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel">
+                <div class="div__boton-close">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="barra__busqueda__mobile">
-                    <div class="espacio__busqueda__mobile">
-                        Escribir...
-                    </div>
-                </div>
+                <form class="barra__busqueda__mobile">
+                    <input class="espacio__busqueda__mobile" type="text" name="Escribir" placeholder="Escribir...">
+                    <button type="submit">
+                        <div>
+                        </div>
+                    </button>
+                </form>
             </div>
             <div class="navbar navbar-dark navbar__mobile">
-                <button class="botonmenu_mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <button class="botonmenu_mobile" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon icono__menu__mobile"></span>
                 </button>
-                <div class="offcanvas menu__mobile" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas menu__mobile" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1">
                             <li class="nav-item">
-                               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   A-Z
-                                </a>
-                              </ul>
+                            <li class="menu__az--desplegable">
+                                <div>
+                                    A-Z
+                                </div>
+                                <ul>
+                                    <li><a href="./historia-Akatsuki.html">Akatsuki</a></li>
+                                    <li><a href="./historia-Dojutsus.html">Dojutsus</a></li>
+                                    <li><a href="./historia-Espadas.html">Espadas</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -85,7 +96,8 @@
         </nav>
     </header>
     <main id="main__contacto">
-        <section><h2>Contacto</h2>
+        <section>
+            <h2>Contacto</h2>
             <div id="section__div__contacto">  
                 <article class=" mensaje__y__mensajeria">
                     <div class="contacto__mensaje__al__publico">
