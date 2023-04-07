@@ -6,15 +6,51 @@
 body{
     font-family: $font-1;
 }
+h1{
+    @extend %font_h;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 h2{
-    font-weight: 600;
+    @extend %font_h;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
 }
 h3{
-    font-weight: 600;
+    @extend %font_h;
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+h4{
+    @extend %font_h;
 }
 ul{
     @include mp0;
 }
 a{
     text-decoration: none;
+}
+@include mobi{
+    h1{
+        @extend %font_h;
+        font-size: 1.79rem;
+        font-weight: 700;
+    }
+    h2{
+        @extend %font_h;
+        font-size: 1.57rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+    h3{
+        @extend %font_h;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+    }
+    h4{
+        @extend %font_h;
+    }
 }

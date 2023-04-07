@@ -1,55 +1,55 @@
-#main__contacto{
-    section{
-        #section__div__contacto{
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            grid-template-rows: repeat(45,16px);
-            .mensaje__y__mensajeria{
-                grid-column: 2/3;
-                grid-row: 16/27;
-                .contacto__mensaje__al__publico{
-                    width: 400px;
-                    height:auto;
-                    p{
-                        text-align: center;
-                        font-weight: 600;
+.section__contacto {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(45, 16px);
+    
+    .mensaje__y__mensajeria {
+        grid-column: 2/3;
+        grid-row: 16/27;
+        .contacto__mensaje__al__publico {
+            width: 400px;
+            height: auto;
+            p {
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+        .mi__mensajeria {
+            gap: 1.2%;
+            h3 {
+                font-size: 1.6rem;
+                position: relative;
+                bottom: 4px;
+            }
+            a {
+                i {
+                    font-size: 2.2rem;
+                    &.icono-whatsapp {
+                        color: rgb(0, 209, 0);
                     }
                 }
-                .mi__mensajeria{
-                    gap: 1.2%;
-                    h3{
-                        font-size: 1.2rem;
-                        position: relative;
-                        bottom: 4px;
-                    }
-                    a{
-                        i{
-                            font-size: 2.2rem;
-                            &.icono-whatsapp{
-                                color: rgb(0, 209, 0);
-                            }
-                        }
-                        &.alinear--mail{
-                            @include flex($fd-c,$jc-fs,$ai-c);
-                            .icono-email{
-                                color: rgb(219, 0, 0);
-                                padding-bottom: 1px;
-                            }
-                        }
+                &.alinear--mail {
+                    @include flex($fd-c, $jc-fs, $ai-c);
+                    .icono-email {
+                        color: rgb(219, 0, 0);
+                        padding-bottom: 1px;
                     }
                 }
             }
         }
     }
 }
-@include mobi{
-    #section__div__contacto{
-        @include flex($fd-c,$jc-fs,$ai-c);
-        .mensaje__y__mensajeria{
-            .mensaje__y__mensajeria{
+
+
+@include mobi {
+    .section__contacto {
+        @include flex($fd-c, $jc-fs, $ai-c);
+        height: 32rem;
+        .mensaje__y__mensajeria {
+            .mensaje__y__mensajeria {
                 width: 90%;
             }
-            .contacto__mensaje__al__publico{
+            .contacto__mensaje__al__publico {
                 width: auto;
             }
         }
